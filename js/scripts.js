@@ -20,11 +20,11 @@ function getBMI(){
   }
   
    
-  function reset(){
+function reset(){
      document.querySelector("#underweight").style.backgroundColor="rgb(232, 228, 247)";
      document.querySelector("#healthy-weight").style.backgroundColor="rgb(232, 228, 247)";
      document.querySelector("#overweight").style.backgroundColor="rgb(232, 228, 247)";
      document.querySelector("#obese").style.backgroundColor="rgb(232, 228, 247)";
      document.querySelector("#severely-obese").style.backgroundColor="rgb(232, 228, 247)";
      document.querySelector("#morbidly-obese").style.backgroundColor="rgb(232, 228, 247)";
-  }
+}
