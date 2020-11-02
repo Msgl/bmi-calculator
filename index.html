@@ -6,62 +6,68 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     
-    <title>Document</title>
+    <title>BMI Calculator</title>
 </head>
 
 <body>
-    <div id="main">
-        <h1> BMI</h1>
-        <div>
-          <input type="number" min="0" id="user-kg" placeholder="weight in kg">
-          <input type="number" min="0" id="user-cm" placeholder="height in cm">
-        </div>
-        <button onclick="getBMI()">Click me</button>
-        <p>Your BMI is </p><h2 id="change">...</h2>
-        
-        <div id="range">
-          <table>
-            <tr>
-              <th>Weight Categories</th>
-              <th>BMI</th>
-            </tr>
+  <header>
+    <h1>BMI Calculator</h1>
+  </header>
+
+  <form>
+    <label for="user-kg">Weight </label>
+    <input type="number" id="user-kg" placeholder="in kg" >
+    <label for="user-cm">Height </label>
+    <input type="number" id="user-cm" placeholder="in cm" >
+  </form>
+   
+  <div>
+    <button onclick="getBMI()">Calculate</button>
+    <button onclick="reset()">Reset</button>
+  </div>
+  
+  <p>Your BMI is </p><p id="user-bmi">...</p>
+
+  <div id="range">
+    <table>
+      <tr>
+        <th>Weight Categories</th>
+        <th>BMI</th>
+      </tr>
             
-            <tr id="underweight">
-              <td>Underweight</td>
-              <td>18.5</td>
-            </tr>
+      <tr id="underweight" class="weight_cat">
+        <td>Underweight</td>
+        <td>18.5</td>
+      </tr>
             
-            <tr id="healthy-weight">
-              <td>Healthy Weight</td>
-              <td>18.5-24.9</td>
-            </tr>
+      <tr id="healthy-weight" class="weight_cat">
+        <td>Healthy Weight</td>
+        <td>18.5-24.9</td>
+      </tr>
              
-            <tr id="overweight">
-              <td>Overweight</td>
-              <td>25-29.9</td>
-            </tr>
+      <tr id="overweight" class="weight_cat">
+        <td>Overweight</td>
+        <td>25-29.9</td>
+      </tr>
             
-            <tr id="obese">
-              <td>Obese</td>
-              <td>30-34.9</td>
-            </tr>
+      <tr id="obese" class="weight_cat">
+        <td>Obese</td>
+        <td>30-34.9</td>
+      </tr>
             
-            <tr id="severely-obese">
-              <td>Severely Obese</td>
-              <td>35-39.9</td>
-            </tr>
+      <tr id="severely-obese" class="weight_cat">
+        <td>Severely Obese</td>
+        <td>35-39.9</td>
+      </tr>
             
-            <tr id="morbidly-obese">
-              <td>Morbidly Obese</td>
-              <td>>=40</td>
-            </tr>
+      <tr id="morbidly-obese" class="weight_cat">
+        <td>Morbidly Obese</td>
+        <td>>=40</td>
+      </tr>
             
-          </table>
-          
-          <button onclick="reset()">Reset</button>
-        </div>
-      </div>
+    </table>     
+  </div>
       
-    <script src="js/scripts.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 </html>
