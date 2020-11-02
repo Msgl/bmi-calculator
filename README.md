@@ -1,6 +1,12 @@
-# bmi-calculator
+# BMI Calculator
+*Vanilla Js*
 
-BMI calculator using VanillaJS.
+**To do:**
+-[] Option for pounds and ft
+-[] Weight converter tool
+-[] Height converter tool
 
-Can be found at:
+
+
+Earlier version:
 https://codepen.io/Msgl89/pen/qBNEpNx
